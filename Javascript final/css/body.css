@@ -1,0 +1,272 @@
+:root{
+ 
+    --font:mobsters;
+    --border-color:rgb(168, 8, 8)
+}
+*{
+    box-sizing: border-box;
+    font-weight:100;
+}
+@font-face {
+    font-family: mobsters;
+    src: 
+    local(font/Mobsters) format("truetype"), 
+    url('font/Mobsters.ttf')
+    format("truetype"); 
+}
+
+body{
+    background-image: linear-gradient(to top, rgb(14, 0, 0), rgb(114, 111, 111));
+    max-width: 1024px;
+    margin-top: 3rem;
+    
+}
+
+.bottom-row{
+    display:flex;
+    flex-direction: row;
+}
+
+/* top left button div */
+.btns-center-left-to-top-m{
+    display:flex;
+    
+    flex:1;
+}
+
+.btns-center-right-to-top-m{
+    display:flex;
+    justify-content: space-evenly;
+    flex:1;
+}
+
+.btns-center-right-to-bottom-m{
+    display: flex;
+}
+
+.btn-img{
+    height: 6rem;
+}
+
+.button{
+    background: transparent;
+    border-left-color: var(--border-color);
+    border-top: none;
+    border-right: none;
+    border-bottom-color: var(--border-color);
+    border-left-style: groove;
+    cursor: pointer;
+}
+/* button effect */
+ .button::before{ 
+    background: red;
+ content:'';
+ position: absolute;
+ transition: .5s;
+ transform: scale(.9);
+ z-index: -1;
+}
+
+.button:hover{
+    color: red;
+    box-shadow: 0 0 15px red;
+
+} 
+
+
+/* button positioning; diagonals top left div  */
+.button-brimstone{
+    margin:200px 15px 0 0px;
+}
+
+/* .button-help{
+    border:none;
+    background-color: var(--border-color);
+    font-family: var(--font);
+} */
+.button-phoenix{
+    margin:100px 15px 0px 15px;
+    
+}
+.button-sage{
+    align-self:flex-start;
+    margin:0px 0px 100px 15px;
+}
+/* button positioning; diagonals top right div  */
+.button-sova{
+    
+    margin:0px 15px 0 145px;
+}
+.button-viper{
+    margin:100px 15px 0px 15px;
+    
+}
+.button-cypher{
+    margin:200px 15px 0px 15px;
+}
+
+
+/* button positioning; diagonals bottom left div  */
+.button-reyna{
+    margin:0px 30px 0 0px;
+}
+.button-killjoy{
+    margin:100px 15px 0px 5px;
+    
+}
+.button-breach{
+    margin:200px 0px 0px 15px;
+}
+
+/* button positioning; diagonals bottom right div  */
+.button-omen{
+    margin:200px 15px 15px 15px;
+}
+.button-jett{
+    margin:100px 15px 15px 15px;
+    
+}
+.button-yoru{
+    margin:0px 15px 0px 15px;
+}
+h1.heading{
+    font-family: var(--font);
+    font-size: 2.5rem;
+    display: flex;
+    margin:.5rem
+    
+   
+}
+
+html{
+    font-family: var(--font), Arial, Helvetica, sans-serif;
+    color:rgb(243, 239, 239);
+
+}
+
+.input{
+    font:var(--font);
+    
+}
+
+.input-bday{
+    letter-spacing: .04rem;
+    filter: drop-shadow(1px 1px 1px white);
+   
+}
+
+.input-submit{
+    background: rgb(221, 219, 219);
+    border: 1;
+    border-color: rgb(94, 91, 91);
+    cursor: pointer;
+    filter: drop-shadow(2.5px 2.5px 2.5px whitesmoke);
+}
+
+.toprow{
+    display:flex;
+    flex-direction: row;
+}
+
+.user-info{
+  display: flex; 
+    align-items:center;
+    flex-direction: column;
+    
+    
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+} 
+
+/* modal */
+
+
+.modal #famImage {
+    max-width: 100px;
+}
+
+/* help button */
+
+.help-button-wrapper{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+.help-icon{
+    max-height: 45px;
+}
+.help-button-icon {
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: .5s;
+  z-index: 3;
+}
+.help-button-icon::before{
+    content: "";
+  position: absolute;
+  
+  transition: .5s;
+  z-index: 2;
+}
+.help-button-icon:hover{
+    transform: rotateY(360deg);
+}
+
+.help-button-close {
+    display: flex;
+    align-self: flex-end;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    margin: 10px;
+    
+}
+
+.help-close-icon {
+    border: none;
+    background: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10px;
+    max-height: 40px;
+}
+.help-heading {
+    color: var(--border-color);
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--font), sans-serif;
+    padding: 5px;
+}
+
+.help-box-body {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(41, 40, 40, 0.8);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    margin: 20px 0;
+    text-align: center;
+}
+.help-sub-heading {
+    font-size: 2rem;
+}
+
+
+/* help end */

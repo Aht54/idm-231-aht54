@@ -1,0 +1,72 @@
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+
+
+/* Add this last */
+[hidden] {
+	display: none !important;
+}
+
+.modal {
+	height: 100vh;
+	width: 100vw;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.modal .blanket {
+	background-color:rgb(41, 38, 38);
+
+	height: 100vh;
+    opacity:80%;
+	width: 100vw;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.modal-body {
+	background-image: linear-gradient( rgba(0,0,0, .75), rgba(0,0,0,.5)), url(/images/bbnycskline.jpg);
+    background-size: cover;
+   
+	border: 1rem solid var(--border-color);
+
+	height: 50vh;
+	max-width: 50vw;
+    
+
+	position: relative;
+	z-index: 101;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 3rem;
+
+    color:white;
+    font-size: 1.3rem;
+    font-weight: 100;
+	text-align: center;
+    
+    
+}

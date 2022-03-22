@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="./css/agent.css">
+    <title>Zodiac Project
+    </title>
+</head>
+<body>
+    <div class = "wrapper">
+
+         <!-- help button -->
+         <div class="help-button-wrapper">
+            <button class = "help-button-icon help-button">
+                <img class="help-icon js-help-icon" src="images/helpbtn.png" alt="help-button">
+            </button>
+        </div>
+        <div class="help-box-body help-box">
+            <button class="help-button-close help-button-close">
+                <img class="help-close-icon js-help-close-icon" src="images/download2.png" alt="help close button">
+            </button>
+            <h1 class="help-heading">
+                Experience a New World.
+            </h1>
+            <h2 class="help-subheading">
+                Enter your date of birth in the box and click the button below. 
+                <br>Or click an agent to learn more about them.</p>
+            </h2>
+           
+            
+        </div>
+            <!-- buttons -->
+
+            <!-- top left -->
+        <div class="toprow">
+            <div class="btns-center-left-to-top-m">    
+                
+                <div>
+                    <button class = "button button-brimstone" id="brimstone">
+                        <picture>
+                            <img src="images/Brimstone.jpeg" class = "btn-img" alt="Brimstone">
+                        </picture>
+                    </button>
+                </div>
+                
+                <div>
+                    <button class = "button button-phoenix" id="phoenix">
+                        <picture>
+                            <img src="images/Phoenix.jpeg" class = "btn-img" alt="Phoenix">
+                        </picture>
+                    </button>
+                </div>
+                
+                <div>
+                    <button class = "button button-sage" id="sage">
+                        <picture>
+                            <img src ="images/Sage.jpeg" class = "btn-img" alt="Sage">
+                        </picture>
+                    </button>
+                </div>
+            </div>
+
+            
+
+            <!-- top right -->
+            <div class="btns-center-right-to-top-m">
+                <div>
+                    <button class = "button button-sova" class = "btn-img" id="sova">
+                        <picture>
+                            <img src="images/Sova.jpeg" class = "btn-img" alt="sova">
+                        </picture>
+                    </button>
+                </div>
+
+                <div>
+                    <button class = "button button-viper" id="viper">
+                        <picture>
+                            <img src="images/Viper.jpeg" class = "btn-img" alt="viper">
+                        </picture>
+                    </button>
+                </div>
+
+                <div>
+                    <button class = "button button-cypher" id="cypher">
+                        <picture>
+                            <img src="images/Cypher.jpeg" class = "btn-img" alt="cypher">
+                        </picture>
+                    </button>
+                </div>
+            </div>
+        </div> 
+        
+        <h1 class="heading">Which agent are you most related to?</h1>
+           
+    <!-- bottom -->
+     <!-- bottom left -->
+        <div class="bottom-row">
+
+            <div class="btns-center-right-to-top-m">
+
+                <div>
+                    <button class = "button button-reyna" id="reyna">
+                        <picture>
+                            <img src="images/Reyna.jpeg" class = "btn-img" alt="reyna">
+                        </picture>
+                    </button>
+                </div>
+
+                <div>
+                    <button class = "button button-killjoy" id="killjoy">
+                        <picture>
+                            <img src="images/Killjoy.jpeg" class = "btn-img" alt="killjoy">
+                        </picture>
+                    </button>
+                </div>
+
+                <div>
+                    <button class = "button button-breach" id="breach">
+                        <picture>
+                            <img src="images/Breach.jpeg" class = "btn-img" alt="breach">
+                        </picture>
+                    </button>
+                </div>
+
+            </div>
+
+              <!-- user input/center page -->
+            <div class = "user-info" id="userInfo">
+                
+                <p>
+                    <input class = "input input-bday"id="bday" type="date">
+                </p>
+
+                <p>
+                    <button class = "input input-submit" id="submitBtn">
+                        <img src="./images/click.jpeg" alt="Click">    
+                    </button>
+                </p>
+            </div>
+            <!-- <button class="button button-help" id="help">
+                help
+            </button> -->
+                <!-- bottom right-->
+            <div class="btns-center-right-to-bottom-m">
+
+                <div>
+                    <button class = "button button-omen" id="omen">
+                        <picture>
+                            <img src="images/Omen.jpeg" class = "btn-img" alt="omen">
+                        </picture>
+                    </button>
+                </div>
+
+                <div>
+                    <button class = "button button-jett" id="jett">
+                        <picture>
+                            <img src="images/Jett.jpeg" class = "btn-img" alt="jett">
+                        </picture>
+                    </button>
+                </div>
+
+                <div>
+                    <button class = "button button-yoru" id="yoru">
+                        <picture>
+                            <img src="images/Yoru.jpeg" class = "btn-img" alt="yoru">
+                        </picture>
+                    </button>
+                </div>
+            </div>  
+        </div>
+
+      
+        <div id="modal" class="modal" hidden>
+            <div class="modal-body">
+              <div class="modal-content">
+                <div><p><span id="agentMember">You are an !</span> <span id="zDate"></span></p></div>
+                <img id="agentImage" src="" alt="blank"/>
+                <p id="agentCopy"></p>
+                <button id="btn-modal-close" class="toggle-modal">Close</button>
+              </div>
+            </div>
+            <div class="blanket"></div>
+    </div>
+    <audio id="speakers"></audio>
+    <script src="main.js"></script>
+</body>
+</html>
